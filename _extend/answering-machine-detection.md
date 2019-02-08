@@ -55,4 +55,5 @@ The second script, `websocket-client.py` is a script that connects to the websoc
 
 ## Resources
 * [GitHub Repository](https://github.com/nexmo-community/AnsweringMachineDetection)
+* [Demo Video](https://www.youtube.com/watch?v=ZREXmLOtScA)
 * Blog post (coming soon)
