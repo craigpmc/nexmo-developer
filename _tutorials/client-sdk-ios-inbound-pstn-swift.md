@@ -8,7 +8,7 @@ languages:
 
 # How to Receive Phone Calls with the Nexmo Client SDK on iOS using Swift
 
-In this guide, we'll learn how to forward an incoming phone call from a Nexmo phone number to an in-app user by implementing a Webhook and linking that to a Nexmo application.
+In this guide, we'll learn how to forward an incoming phone call from a Nexmo phone number to an in-app user by implementing a webhook and linking that to a Nexmo application.
 
 You will create a simple app to receive a call.
 
@@ -17,17 +17,23 @@ The app will automatically log in a user called Jane. After logging in, Jane is 
 ## Prerequisites
 
 - [Create a Nexmo Application](/tutorials/client-sdk-generate-test-credentials).
-- Have a [user for your Nexmo Application, with valid JWTs](/tutorials/client-sdk-generate-test-credentials).
+- Have a [user for your Nexmo Application, with a valid JWT](/tutorials/client-sdk-generate-test-credentials).
 - [Add Nexmo SDK to your project](/tutorials/client-sdk-ios-add-sdk-to-your-app).
 
 
-## NCCO
+## Application webhook
 
+For your application to connect an income phone call to an app user, you'll need to provide a URL as the `Answer URL` webhook - we've created a [gist](https://gist.github.com/NexmoDev/ed91ac99a0b278fbdcbde72ca3599ac7) for you to use.
 
+To add this URL, go to your [Nexmo dashboard](https://dashboard.nexmo.com), navigate to [applications](https://dashboard.nexmo.com/voice/your-applications), select your application and click the 'Edit' button.
 
-## Application event_url (gist)
+Set the application's `Answer URL` to: 
 
+``https://gist.githubusercontent.com/NexmoDev/ed91ac99a0b278fbdcbde72ca3599ac7/raw/4a134363f8b3bbebae27f04095a57d0cebc5a1be/ncco.json ``
 
+and click 'Save changes'.
+
+For more information on Nexmo application please visit the Nexmo [API Reference](https://developer.nexmo.com/api/application) and the [Nexmo Call Control Object (NCCO)](https://developer.nexmo.com/voice/voice-api/ncco-reference) reference.
 
 ## Create the project
 
