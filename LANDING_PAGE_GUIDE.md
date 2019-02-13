@@ -58,7 +58,7 @@ The `action_button` content block creates a clickable linked HTML button you can
 
 ```
 
-The `action_button` also takes optional parameters. **You do not need to define these optional parameters, unless you want their value to be `true` or the non-default.**:
+The `action_button` supports the following optional parameters:
 
 ```yaml
 
@@ -70,7 +70,7 @@ center_button: # true or false, with false being the default.
 
 ### Call To Action
 
-The `call_to_action` content block creates a specific layout of text with an icon. You might want to use the `call_to_action` to draw attention to a featured area of Nexmo Developer, like our Community page, for example. The `call_to_action` block requires the following parameters:
+The `call_to_action` content block creates a specific layout of text with an icon ([see list of available icons here](http://vonage-ds.herokuapp.com/icons.html)). You might want to use the `call_to_action` to draw attention to a featured area of Nexmo Developer, like our Community page, for example. The `call_to_action` block requires the following parameters:
 
 ```yaml
 
@@ -265,7 +265,7 @@ The `tutorial` content block lets you link to a tutorial and show a tutorial ima
 
 ### Unordered List
 
-The `unordered_list` content block lets you create a list of items and specify the shape of the list bullet item demarcator. It accepts the following required parameters:
+The `unordered_list` content block lets you create a list of items and specify the shape of the list bullet item symbol. It accepts the following required parameters:
 
 ```yaml
 
@@ -279,7 +279,7 @@ The `unordered_list` content block lets you create a list of items and specify t
 
 ```
 
-As mentioned, you can also specify the shape of the list bullet with the `bullet_shape` parameter:
+As mentioned, you can also specify the shape of the bullet symbol with the `bullet_shape` parameter:
 
 ```yaml
 
