@@ -51,7 +51,7 @@ At this point we are ready to detail each content block type and the data associ
 
 ### Action Button
 
-<img src="/images/contributing/landing_page_screenshots/action_button.png" width=200>
+<img src="/assets/images/contributing/landing_page_screenshots/action_button.png" width=200>
 
 The `action_button` content block creates a clickable linked HTML button you can add to the landing page. The YAML config for an action button is the following:
 
@@ -76,7 +76,7 @@ center_button: # true or false, with false being the default.
 
 ### Call To Action
 
-<img src="/images/contributing/landing_page_screenshots/call_to_action.png" width=200>
+<img src="/assets/images/contributing/landing_page_screenshots/call_to_action.png" width=200>
 
 The `call_to_action` content block creates a specific layout of text with an icon ([see list of available icons here](http://vonage-ds.herokuapp.com/icons.html)). You might want to use the `call_to_action` to draw attention to a featured area of Nexmo Developer, like our Community page, for example. The `call_to_action` block requires the following parameters:
 
@@ -102,7 +102,7 @@ subtitle: "Our **SDKs and Tools** provide you with everything you need to get up
 
 ### Contact Support
 
-<img src="/images/contributing/landing_page_screenshots/contact_support.png" width=400>
+<img src="/assets/images/contributing/landing_page_screenshots/contact_support.png" width=400>
 
 The `contact_support` content block is a pre-defined set of information that takes no parameters. Once you add it to your config file, it will populate with information about getting in touch with Nexmo for support. To add it to your config file, you must only reference it:
 
@@ -114,7 +114,7 @@ The `contact_support` content block is a pre-defined set of information that tak
 
 ### GitHub Repo
 
-<img src="/images/contributing/landing_page_screenshots/github_repo.png" width=200>
+<img src="/assets/images/contributing/landing_page_screenshots/github_repo.png" width=200>
 
 The `github_repo` content block lets you reference a GitHub repository on your landing page. It will display the name of the repository, the language, the number of stars and number of forks. The block will link to the repository directly on GitHub. It requires the following parameters:
 
@@ -130,7 +130,7 @@ The `github_repo` content block lets you reference a GitHub repository on your l
 
 ### Header
 
-<img src="/images/contributing/landing_page_screenshots/header.png" width=200>
+<img src="/assets/images/contributing/landing_page_screenshots/header.png" width=200>
 
 The `header` block provides you with the layout for the landing page header content. The content consists of a title, with an icon, and an optional subtitle. You can specify the required parameters as such:
 
@@ -176,7 +176,7 @@ The `HTML` content block provides you with a place to insert HTML code that does
 
 ### Join Slack
 
-<img src="/images/contributing/landing_page_screenshots/join_slack.png" width=200>
+<img src="/assets/images/contributing/landing_page_screenshots/join_slack.png" width=200>
 
 The `join_slack` content block is a pre-defined styled invitation to join the Nexmo community Slack. It takes no parameters.
 
@@ -222,7 +222,7 @@ The `products` content block is a pre-defined listing of all of Nexmo's API prod
 
 ### Section Header
 
-<img src="/images/contributing/landing_page_screenshots/section_header.png" width=200>
+<img src="/assets/images/contributing/landing_page_screenshots/section_header.png" width=200>
 
 The `section_header` content block is used to create a header for a new section of content on your landing page. It renders a title with an icon. It takes the following parameters:
 
@@ -239,7 +239,7 @@ The `section_header` content block is used to create a header for a new section 
 
 ### Structured Text
 
-<img src="/images/contributing/landing_page_screenshots/structured_text.png" width=400>
+<img src="/assets/images/contributing/landing_page_screenshots/structured_text.png" width=400>
 
 The `structured_text` content block provides the styling for a block of text content that features a title with an icon and subsequent paragraps of text. The text `content` can render markdown formatting. It takes the following required parameters:
 
@@ -273,7 +273,7 @@ The `text` content block provides you a space to insert plain text into your lan
 
 ### Tutorial
 
-<img src="/images/contributing/landing_page_screenshots/tutorial.png" width=200>
+<img src="/assets/images/contributing/landing_page_screenshots/tutorial.png" width=200>
 
 The `tutorial` content block lets you link to a tutorial and show a tutorial image, if one exists, and a tutorial title and description. The only parameter it requires is the `name` of the tutorial file on Nexmo Developer. The renderer will retrieve the rest of the details from the tutorial file itself:
 
@@ -287,7 +287,7 @@ The `tutorial` content block lets you link to a tutorial and show a tutorial ima
 
 ### Unordered List
 
-<img src="/images/contributing/landing_page_screenshots/unordered_list.png" width=400>
+<img src="/assets/images/contributing/landing_page_screenshots/unordered_list.png" width=400>
 
 The `unordered_list` content block lets you create a list of items and specify the shape of the list bullet item symbol. It accepts the following required parameters:
 
