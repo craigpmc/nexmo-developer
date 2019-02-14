@@ -1,3 +1,7 @@
+---
+title: Landing Pages
+---
+
 # Config Driven Landing Pages on Nexmo Developer
 
 ## Introduction
