@@ -14,7 +14,7 @@ Let's explore the building of a config file and then we will detail each content
 
 ## Building A Config File
 
-Each config file represents the visual layout of a landing page, including the number of rows and the amount of columns in each row, along with the actual information in the landing page. A config file begins with `rows:` that designate the `key` name of `rows` and the colon is the demarcator between the `key` name and the `value`. Within a YAML file, to specify an array of data one uses the `-` before the `key` name. This is an important element of the config file, as the data of `rows` and `columns` are held in arrays. Thus, the following will produce a single row with two columns:
+Each config file represents the visual layout of a landing page, including the number of rows and the amount of columns in each row, along with the actual information in the landing page. A config file begins with `rows:` that designate the `key` name of `rows` and the colon is the division between the `key` name and the `value`. Within a YAML file, to specify an array of data one uses the `-` before the `key` name. This is an important element of the config file, as the data of `rows` and `columns` are held in arrays. Thus, the following will produce a single row with two columns:
 
 ```yaml
 
