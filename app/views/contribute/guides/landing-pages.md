@@ -12,7 +12,7 @@ The config file represents rows and columns on a website with pre-defined conten
 
 Let's explore the building of a config file and then we will detail each content block and the data it accepts.
 
-## Building A Config File
+## Defining the Layout of a Config File
 
 Each config file represents the visual layout of a landing page, including the number of rows and the amount of columns in each row, along with the actual information in the landing page. A config file begins with `rows:` that designate the `key` name of `rows` and the colon is the division between the `key` name and the `value`. Within a YAML file, to specify an array of data one uses the `-` before the `key` name. This is an important element of the config file, as the data of `rows` and `columns` are held in arrays. Thus, the following will produce a single row with two columns:
 
@@ -78,7 +78,7 @@ center_button: # true or false, with false being the default.
 
 <img src="/assets/images/contributing/landing_page_screenshots/call_to_action.png" width=200>
 
-The `call_to_action` content block creates a specific layout of text with an icon ([see list of available icons here](http://vonage-ds.herokuapp.com/icons.html)). You might want to use the `call_to_action` to draw attention to a featured area of Nexmo Developer, like our SDKs and Tools, for example. The `call_to_action` block requires the following parameters:
+The `call_to_action` content block creates a specific layout of text with an icon. You might want to use the `call_to_action` to draw attention to a featured area of Nexmo Developer, like our SDKs and Tools, for example. The `call_to_action` block requires the following parameters:
 
 ```yaml
 
@@ -104,7 +104,7 @@ subtitle: "The Nexmo libraries allow you to get up and running with<br> Nexmo AP
 
 <img src="/assets/images/contributing/landing_page_screenshots/contact_support.png" width=400>
 
-The `contact_support` content block is a pre-defined set of information that takes no parameters. Once you add it to your config file, it will populate with information about getting in touch with Nexmo for support. To add it to your config file, you must only reference it:
+The `contact_support` content block is a pre-defined set of information that takes no parameters. Once you add it to your config file, it will populate with information about getting in touch with Nexmo for support. To add it to your config file, just reference it:
 
 ```yaml
 
@@ -132,7 +132,7 @@ The `github_repo` content block lets you reference a GitHub repository on your l
 
 <img src="/assets/images/contributing/landing_page_screenshots/header.png" width=200>
 
-The `header` block provides you with the layout for the landing page header content. The content consists of a title, with an icon, and an optional subtitle. You can specify the required parameters as such:
+The `header` block provides you with the layout for the landing page header content. The content consists of a title, with an icon, and an optional subtitle. You can specify the required parameters with the following:
 
 ```yaml
 
@@ -146,7 +146,7 @@ The `header` block provides you with the layout for the landing page header cont
 
 ```
 
-There are also optional parameters for the `header` content block. You do not need to specify values for these optional parameters. You do so only if you want them to be set to `true` or their non-default value:
+There are also optional parameters for the `header` content block. You only need to specify values for these optional parameters if you want to change their defaults.
 
 ```yaml
 
@@ -166,7 +166,7 @@ Lastly, like the `call_to_action` subtitle, the text in the `header` subtitle is
 
 <img src="/assets/images/contributing/landing_page_screenshots/html.png" width=400>
 
-The `HTML` content block provides you with a place to insert HTML code that does not fit any of the pre-defined content blocks. Perhaps you wish to design a custom feature for a specific landing page and its needs, then this would be the tool to do so with. It's only required parameter is `content`:
+The `HTML` content block provides you with a place to insert HTML code that does not fit any of the pre-defined content blocks. Its only required parameter is `content`:
 
 ```yaml
 
