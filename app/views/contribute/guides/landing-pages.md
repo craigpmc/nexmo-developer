@@ -164,13 +164,15 @@ Lastly, like the `call_to_action` subtitle, the text in the `header` subtitle is
 
 ### HTML
 
+<img src="/assets/images/contributing/landing_page_screenshots/html.png" width=400>
+
 The `HTML` content block provides you with a place to insert HTML code that does not fit any of the pre-defined content blocks. Perhaps you wish to design a custom feature for a specific landing page and its needs, then this would be the tool to do so with. It's only required parameter is `content`:
 
 ```yaml
 
 - type: html
   html:
-    content: # Put HTML here (i.e. "<h2>Custom tags</h2>")
+    content: # Put HTML here (i.e. "This is a <strong>HTML</strong> example")
 
 ```
 
@@ -187,6 +189,8 @@ The `join_slack` content block is a pre-defined styled invitation to join the Ne
 ```
 
 ### Line Divider
+
+<img src="/assets/images/contributing/landing_page_screenshots/line_divider.png" width=400>
 
 The `line_divider` content block is a pre-defined rendered line that can be used to visually divide a page. It takes no parameters.
 
@@ -265,13 +269,15 @@ You can specify as many `text` blocks as you would like. Each `text` block consi
 
 ### Text
 
+<img src="/assets/images/contributing/landing_page_screenshots/text.png" width=200>
+
 The `text` content block provides you a space to insert plain text into your landing page, including with markdown formatting. It is structured as follows:
 
 ```yaml
 
 - type: text
   text:
-    content: # Text goes here (i.e. "This is __my__ text")
+    content: # Text goes here (i.e. "This is a **Text** example")
 
 ```
 
