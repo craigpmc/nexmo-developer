@@ -4,6 +4,27 @@ title: Landing Pages
 
 # Config Driven Landing Pages on Nexmo Developer
 
+## Table of Contents
+
+* [Introduction](#introduction)
+* [Defining the Layout of the Config File](#defining-the-layout-of-the-config-file)
+* [Content Types](#content-types)
+    - [Action Button](#action-button)
+    - [Call to Action](#call-to-action)
+    - [Contact Support](#contact-support)
+    - [GitHub Repo](#github-repo)
+    - [Header](#header)
+    - [HTML](#html)
+    - [Join Slack](#join-slack)
+    - [Line Divider](#line-divider)
+    - [Linked Image](#linked-image)
+    - [Products](#products)
+    - [Section Header](#section-header)
+    - [Structured Text](#structured-text)
+    - [Text](#text)
+    - [Tutorial](#tutorial)
+    - [Unordered List](#unordered-list)
+
 ## Introduction
 
 Config driven landing pages allow you to create pages with the content you need quickly and painlessly. Each landing page is generated from a [YAML](https://yaml.org/start.html) file in `/config/landing_pages/`. The name of the YAML file should be the same name as the URL you want for the landing page. For example, if you want a PHP language landing page that can be accessed at `https://developer.nexmo.com/php` then you need to name your YAML file `php.yml`.  
@@ -12,7 +33,7 @@ The config file represents rows and columns on a website with pre-defined conten
 
 Let's explore the building of a config file and then we will detail each content block and the data it accepts.
 
-## Defining the Layout of a Config File
+## Defining the Layout of the Config File
 
 Each config file represents the visual layout of a landing page, including the number of rows and the amount of columns in each row, along with the actual information in the landing page. A config file begins with `rows:` that designate the `key` name of `rows` and the colon is the division between the `key` name and the `value`. Within a YAML file, to specify an array of data one uses the `-` before the `key` name. This is an important element of the config file, as the data of `rows` and `columns` are held in arrays. Thus, the following will produce a single row with two columns:
 
