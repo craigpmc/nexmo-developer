@@ -59,8 +59,8 @@ The `action_button` content block creates a clickable linked HTML button you can
 
 - type: action_button
     action_button:
-      text: # Text for the button (i.e. "Click here!")
-      url: # The URL for the button (i.e. "https://developer.nexmo.com")
+      text: # Text for the button (i.e. "Apply now!")
+      url: # The URL for the button (i.e. "#submit-your-idea")
 
 ```
 
@@ -78,7 +78,7 @@ center_button: # true or false, with false being the default.
 
 <img src="/assets/images/contributing/landing_page_screenshots/call_to_action.png" width=200>
 
-The `call_to_action` content block creates a specific layout of text with an icon ([see list of available icons here](http://vonage-ds.herokuapp.com/icons.html)). You might want to use the `call_to_action` to draw attention to a featured area of Nexmo Developer, like our Community page, for example. The `call_to_action` block requires the following parameters:
+The `call_to_action` content block creates a specific layout of text with an icon ([see list of available icons here](http://vonage-ds.herokuapp.com/icons.html)). You might want to use the `call_to_action` to draw attention to a featured area of Nexmo Developer, like our SDKs and Tools, for example. The `call_to_action` block requires the following parameters:
 
 ```yaml
 
@@ -88,15 +88,15 @@ The `call_to_action` content block creates a specific layout of text with an ico
     icon: 
       name: # Name of icon to use (i.e. "icon-design-tools")
       color: # Color of icon (i.e. "blue-dark")
-    url: # Link the call to action directs to (i.e. "/community")
+    url: # Link the call to action directs to (i.e. "/tools")
 
 ```
 
-In addition, you can also specify an optional `subtitle` parameter that gives you the opportunity to provide more descriptive text for your call to action. (_Note: You can use markdown in the `subtitle` to further style the content_.) For example, the following would render with the "SDKs and Tools" text in bold:
+In addition, you can also specify an optional `subtitle` parameter that gives you the opportunity to provide more descriptive text for your call to action. (_Note: You can use markdown in the `subtitle` to further style the content_.) For example, the following would render with a line break between `with` and `Nexmo APIs`:
 
 ```yaml
 
-subtitle: "Our **SDKs and Tools** provide you with everything you need to get up and running."`
+subtitle: "The Nexmo libraries allow you to get up and running with<br> Nexmo APIs quickly in your language of choice."`
 
 ```
 
@@ -124,7 +124,7 @@ The `github_repo` content block lets you reference a GitHub repository on your l
   github_repo:
     repo_url: # Link to repository on GitHub
     github_repo_title: # Name of repository (i.e. "Nexmo REST API client for .NET")
-    language: # Language of code in repository (i.e. "Ruby")
+    language: # Language of code in repository (i.e. ".NET")
 
 ```
 
@@ -139,10 +139,10 @@ The `header` block provides you with the layout for the landing page header cont
 - type: header
   header:
     title: 
-      text: # The header title text (i.e. "Welcome!")
+      text: # The header title text (i.e. "Write for Nexmo!")
     icon: 
-      name: # Name of icon to use (i.e. "icon-star")
-      color: # Color of icon (i.e. "yellow")
+      name: # Name of icon to use (i.e. "icon-rocket")
+      color: # Color of icon (i.e. "blue")
 
 ```
 
@@ -154,7 +154,7 @@ title:
   text: # Header title
   align: # Text alignment, default is left-aligned if not defined (i.e. "center")
 subtitle:
-  text: # Subtitle text (i.e. "Find out more by reading the following.")
+  text: # Subtitle text (i.e. "Teach others, grow as a writer, and help us build the next go-to destination...")
   align: # Subtitle text alignment, default is left-aligned if not defined (i.e. "center")
   type: # "large" or "small", default is small if not defined
 
@@ -198,6 +198,8 @@ The `line_divider` content block is a pre-defined rendered line that can be used
 
 ### Linked Image
 
+<img src="/assets/images/contributing/landing_page_screenshots/linked_image.png" width=200>
+
 The `linked_image` content block provides you with a format for an image that is linked to a URL. It takes the following parameters:
 
 ```yaml
@@ -211,6 +213,8 @@ The `linked_image` content block provides you with a format for an image that is
 ```
 
 ### Products
+
+<img src="/assets/images/contributing/landing_page_screenshots/products.png" width=200>
 
 The `products` content block is a pre-defined listing of all of Nexmo's API products. It displays each one with links to tutorials, guides, building blocks and API reference. It takes no parameters.
 
@@ -247,12 +251,12 @@ The `structured_text` content block provides the styling for a block of text con
 
 - type: structured_text
   structured_text:
-    header: # Header text (i.e. "Write for us!")
+    header: # Header text (i.e. "Who Owns Your Work?")
     icon:
-      name: # Icon name (i.e. "icon-envelope")
+      name: # Icon name (i.e. "icon-merge")
       color: # Icon color (i.e. "blue")
     text:
-      - content: # Text content here, including markdown formatting (i.e. "**Text** goes here")
+      - content: # Text content here, including markdown formatting (i.e. "You do!...")
         type: # "large" or "small"
 
 ```
@@ -281,7 +285,7 @@ The `tutorial` content block lets you link to a tutorial and show a tutorial ima
 
 - type: tutorial
   tutorial:
-    name: # Name of tutorial (i.e. mobile-app-invites)
+    name: # Name of tutorial (i.e. two-factor-authentication-dotnet-verify-api)
 
 ```
 
